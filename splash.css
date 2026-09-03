@@ -1,0 +1,62 @@
+/* 1. Default margin/padding reset & screen overflow control */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* 2. Splash Screen Container (Full Screen Setup) */
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff; /* Aap background color apne app ke theme ke hisab se change kar sakti hain (e.g. #000000 या #1e293b) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Screen ke sabse upar dikhane ke liye */
+  transition: opacity 0.5s ease-out; /* Smooth fade-out effect */
+}
+
+/* 3. Logo (GIF/Image) Styling */
+.splash .logo {
+  max-width: 200px; /* Logo ki max width */
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/* 4. RideBuddy Name/Heading Styling */
+.splash .name {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333333; /* Text color */
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* 5. Main Content Container */
+.main-content {
+  display: none; /* Hide by default */
+  width: 100%;
+  height: 100vh;
+}
+
+/* 6. Iframe Full Screen Setup */
+.main-content iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+  display: block;
+}
