@@ -1,62 +1,73 @@
-/* 1. Default margin/padding reset & screen overflow control */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* 1. Global Reset - Screen margins, borders, paddings completely clear */
+*, *::before, *::after {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  font-family: Arial, sans-serif;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100vh !important;
+  min-height: 100dvh !important; /* Mobile dynamic address bar support */
+  overflow: hidden !important;
+  background-color: #ffffff;
 }
 
-/* 2. Splash Screen Container (Full Screen Setup) */
+/* 2. Absolute Full Screen Splash Screen */
 .splash {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff; /* Aap background color apne app ke theme ke hisab se change kar sakti hain (e.g. #000000 या #1e293b) */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; /* Screen ke sabse upar dikhane ke liye */
-  transition: opacity 0.5s ease-out; /* Smooth fade-out effect */
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  background-color: #ffffff;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 99999 !important;
 }
 
-/* 3. Logo (GIF/Image) Styling */
+/* 3. Splash Logo / GIF */
 .splash .logo {
-  max-width: 200px; /* Logo ki max width */
-  width: 60%;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 20px;
+  width: 75% !important;
+  max-width: 280px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
 }
 
-/* 4. RideBuddy Name/Heading Styling */
+/* 4. Text Styling */
 .splash .name {
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: #333333; /* Text color */
-  letter-spacing: 2px;
-  text-align: center;
+  font-size: 2.2rem !important;
+  font-family: Arial, sans-serif !important;
+  color: #111111 !important;
+  margin-top: 15px !important;
+  text-align: center !important;
+  letter-spacing: 1px !important;
 }
 
-/* 5. Main Content Container */
+/* 5. Main Content Section */
 .main-content {
-  display: none; /* Hide by default */
-  width: 100%;
-  height: 100vh;
+  display: none;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
 }
 
-/* 6. Iframe Full Screen Setup */
+/* 6. Full Screen Iframe Setup */
 .main-content iframe {
-  width: 100%;
-  height: 100vh;
-  border: none;
-  display: block;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  border: none !important;
+  outline: none !important;
+  display: block !important;
 }
