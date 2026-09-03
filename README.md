@@ -19,6 +19,6 @@ A clean, responsive, and user-friendly frontend project built during my 2nd year
 ---
 
 ## 🚀 Live Demo
-🔗 [Click Here to View Live Project](https://maanvi-acharya-cs.github.io/cab-booking-website/).
+🔗 [Click Here to View Live Project](https://maanvi-acharya-cs.github.io/cab-booking-website/index.html).
 
 ---
