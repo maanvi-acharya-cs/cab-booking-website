@@ -1,0 +1,149 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* logo ka naam ride buddy aur logo */
+.logo-name{
+    display: flex;
+    align-items: center;
+}
+
+/* Logo*/
+.header .logo {
+    height: 50px; /* adjust as needed */
+    margin-right: 10px;
+}
+ 
+/*logo ka naam ridebuddy*/
+.header .app-name {
+    display:flex;
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'segoe Script';
+}
+
+/* Right button book a cab and profile*/
+.header .rightdiv {
+    margin-left: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+/*book a cab button*/
+.bookcab{
+    color: rgb(6, 193, 244);
+    text-decoration: none;
+    font-size: 18px;
+} 
+/*profile*/
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.arrow {
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+/* Dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  width: 200px;
+  flex-direction: column;
+}
+
+.dropdown a {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown a:hover {
+  background: #f2f2f2;
+}
+
+.profile.active .dropdown {
+  display: flex;
+}
+
+.profile.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Login Section */
+.signup{
+  width: 600px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  color:rgb(33, 33, 34);
+}
+
+/*how do u want to login*/
+.signup h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: #0a4a54;
+}
+
+/*continue with email and phone number*/
+.signup-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(49, 48, 48);
+}
+
+.signup-option:hover {
+  background: #f5f5f5;
+}
+
+.arrow {
+  font-size: 20px;
+  color: gray;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.signupterms{
+    font-size: 12px;
+}

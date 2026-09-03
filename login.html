@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to your RideBuddy account</title>
+    <link rel="stylesheet" href="login.css"></link>
+    <script>
+        function toggleMenu(el) 
+        {el.classList.toggle("active"); }
+    </script>
+</head>
+<body>
+    <header class="header">
+
+        <div class="logo-name">
+            <img src="project images/logo1.gif" alt="logo" class="logo">
+            <h1 class="app-name">RideBuddy</h1>
+        </div>
+
+        <div class="rightdiv" >
+            <a href="book.html" class="bookcab">Book a Cab</a>
+
+            <div class="profile" onclick="toggleMenu(this)">
+                <img src="project images/profile.png" alt="Profile" class="profile-pic">
+                <span class="arrow">▼</span>
+                <div class="dropdown">
+                    <a href="login.html">Log in <span>›</span></a>
+                    <a href="signup.html">Sign up <span>›</span></a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+<!-- Login Section -->
+<section class="login-section">
+    
+    <h1>How do you want to log in?</h1>
+    
+    <a href="login-email.html" class="login-option">Continue with email <span class="arrow">›</span>
+    </a>
+
+    <hr>
+
+    <a href="login-phone.html" class="login-option">Continue with Phone NUmber <span class="arrow">›</span>
+    </a>
+
+    <p>Not a member yet? 
+    <a href="signup.html">Sign up</a>
+    </p>
+
+</section>
+
+</body>
+</html>

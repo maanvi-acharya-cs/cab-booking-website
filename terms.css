@@ -1,0 +1,67 @@
+/* General Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #1a73e8;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+
+/* Main Container */
+.terms-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Sections */
+.terms-section {
+  background-color: #fff;
+  padding: 30px 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.terms-section h2 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #1a73e8;
+}
+
+.terms-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.terms-section ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px 20px;
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 14px;
+}

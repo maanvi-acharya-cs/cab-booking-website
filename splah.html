@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RideBuddy</title>
+  <link rel="stylesheet" href="splash.css">
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div class="splash" id="splash">
+    <img src="project images/logo1.gif" alt="RideBuddy Logo" class="logo">
+    <h1 class="name">RideBuddy</h1>
+  </div>
+
+  <!-- Main Content (hidden by default) -->
+  <div class="main-content" id="main">
+    <iframe src="front.html" frameborder="0" style="width:100%; height:100vh;"></iframe>
+  </div>
+
+  <script>
+    // Hide splash after 4 sec
+    setTimeout(() => {
+      document.getElementById("splash").style.display = "none";
+      document.getElementById("main").style.display = "block";
+    }, 4000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp with RideBuddy</title>
+    <link rel="stylesheet" href="signup.css">
+    <script>
+        function toggleMenu(el) 
+        {el.classList.toggle("active"); }
+    </script>
+</head>
+<body>
+    <header class="header">
+
+        <div class="logo-name">
+            <img src="project images/logo1.gif" alt="logo" class="logo">
+            <h1 class="app-name">RideBuddy</h1>
+        </div>
+
+        <div class="rightdiv" >
+            <a href="book.html" class="bookcab">Book a Cab</a>
+
+
+            
+            <div class="profile" onclick="toggleMenu(this)">
+                <img src="project images/profile.png" alt="Profile" class="profile-pic">
+                <span class="arrow">▼</span>
+                <div class="dropdown">
+                    <a href="login.html">Log in <span>›</span></a>
+                    <a href="signup.html">Sign up <span>›</span></a>
+                </div>
+            </div>
+
+        </div>
+
+  </header>
+
+  <!-- Signup Section -->
+<section class="signup">
+    
+    <h1>How do you want to sign up?</h1>
+    
+    <a href="signup-email.html" class="signup-option">Continue with email <span class="arrow">›</span>
+    </a>
+
+    <hr>
+
+    <a href="signup-phone.html" class="signup-option">Continue with Phone Number <span class="arrow">›</span>
+    </a>
+
+    <p>Already a member? 
+    <a href="login.html">Log In</a>
+    <p class="signupterms">By signing up, you accept our ToS and Privacy Policy. This information is collected by COMUTO SA for the purposes of creating your account, managing your booking, using and improving our services and ensuring the security of our platform. You have rights on your personal data and can exercise them by contacting RideBuddy through our Contact form. You can learn more about your rights and how we handle your personal data in our Privacy Policy.</p>
+    </p>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,219 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+/*logo ka pic*/
+.header .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/*ridebuddy*/
+.header .app-name {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'segoe script';
+}
+
+/*logo aur naam dono */
+.logo-name{
+    display: flex;
+    align-items: center;
+}
+
+/* Right div button profile wala*/
+.header .rightdiv{
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/*profile*/
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.arrow {
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+/* Dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  width: 200px;
+  flex-direction: column;
+}
+
+.dropdown a {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown a:hover {
+  background: #f2f2f2;
+}
+
+.profile.active .dropdown {
+  display: flex;
+}
+
+.profile.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Main layout (form left + image right) */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: calc(100vh-70px);
+}
+
+/*H2 HAI find a ride wala*/
+.find{
+  text-align: center;
+}
+
+/*ENTER wala button from and to wala*/
+.form-container{
+  width: 90%;
+  margin-top: 0px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+/*text box of from and to */
+.input{
+  background: #e6e6e6;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+/*Available wala buton*/
+.Available{
+  padding: 12px 24px; 
+  font-size: 16px;               
+  height: 50px; 
+  color: white;
+  background-color: rgb(58, 185, 249);  
+}
+
+/*vo map ka img aur para bhi*/
+.info{
+  color: rgb(130, 128, 128);
+  text-align: center;
+  margin-top: 70px;
+}
+/*mapk ka icon*/
+.icon{
+  height: 60px;
+  margin-bottom: 0px;
+}
+
+/*list*/
+.rides {
+      margin-top: 20px;
+      display: none; /* by default hidden */
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .rides ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .rides li {
+      background: #ffffff;
+      margin: 5px 0;
+      padding: 8px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+       border-bottom: 1px solid #ddd;
+    }
+
+    .rides .listleft{
+      display: flex;
+  align-items: center;
+    }
+    .rides h3 {
+  margin-left: 0;
+  margin: 0;
+}
+
+.arrow {
+  font-weight: bold;
+}
+
+    .rides p{
+        margin: 2px 0 0;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .rides headline{
+      flex:1 ;
+    }
+
+    .rides img{
+      margin-right: 8px;
+    }
+
+    /*list ka img*/
+    .auto{
+      width: 50px;
+    }
+    .auto1{
+      width: 40px;
+    }
+
+    
+.main-section .image-section img{
+    width:100% ;
+    height:700px ;
+    text-align: right;
+
+}
+.form-section{
+    flex: 1;
+}
+
+.image-section{
+    flex: 1.5;
+}
